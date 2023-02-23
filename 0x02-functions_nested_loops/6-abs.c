@@ -1,26 +1,11 @@
 #include "main.h"
 /**
- * jack_bauer - function that prints every minute of the day, 24 hour clock
- * h = hour, m = minutes
- * / 10 allows second digit to rotate
- * for loop breaks before passing 24:00
+ * _abs - a function that computes the absolute value of an integer
+ * @ab: is an integer input
  *
- * Return: 24 hour clock line by line
+ * Return: absolute value of ab
  */
-void jack_bauer(void)
+int _abs(int ab)
 {
-	int h, m;
-
-	for (h = 0; h < 24; h++)
-	{
-		for (m = 0; m < 60; m++)
-		{
-			_putchar((h / 10) + '0');
-			_putchar((h % 10) + '0');
-			_putchar(':');
-			_putchar((m / 10) + '0');
-			_putchar((m % 10) + '0');
-			_putchar('\n');
-		}
-	}
+	return (ab * ((ab > 0) - (ab < 0)));
 }
