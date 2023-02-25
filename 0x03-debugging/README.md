@@ -1,1 +1,1 @@
-write readme
+c.d bugging
